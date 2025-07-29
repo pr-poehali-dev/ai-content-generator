@@ -388,8 +388,9 @@ const Index = () => {
                     className={`w-full ${
                       plan.popular 
                         ? 'bg-gradient-to-r from-vibrant to-purple hover:opacity-90' 
-                        : 'variant-outline border-purple text-purple hover:bg-purple hover:text-white'
+                        : 'border-purple text-purple hover:bg-purple hover:text-white'
                     }`}
+                    variant={plan.popular ? 'default' : 'outline'}
                   >
                     {plan.button}
                   </Button>
